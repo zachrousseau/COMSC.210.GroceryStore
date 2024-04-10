@@ -45,7 +45,7 @@ export default function Cart() {
         </table>
 
       <section id="checkout">
-      <Link href="/">Checkout</Link>
+      <Link href="/checkout">Checkout</Link>
       </section>
       </main>
     </div>
