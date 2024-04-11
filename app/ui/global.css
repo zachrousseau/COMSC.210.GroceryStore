@@ -56,9 +56,15 @@ ul{
 
 /* Header **/
 header nav{
+  padding-right:30px;
   float:left;
   margin-top:10px;
   margin-left:10px;
+  padding-right: 30px; /* Adjust for desired spacing */
+}
+
+header nav li {
+  display: inline-block; /* Ensures items stay on one line */
 }
 
 /* Header **/
@@ -68,6 +74,8 @@ color: #000000;
 padding-top:5px;
 min-height:48px;
 border-bottom:#289b5c 5px solid;
+display: flex;
+justify-content: center;
 }
 
 header a{
