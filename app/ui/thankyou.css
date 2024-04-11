@@ -1,0 +1,26 @@
+#title {
+    font-size: 100px;
+}
+
+#thankyou h1{
+    font-size: 100px;
+}
+
+#thankyou a:hover{
+    text-align: right;
+    width:75%;
+    font-weight:bold;
+    color: #289b5c;
+  }
+
+
+  main{
+    padding-top:5px;
+    min-height:45px;
+    padding-left:0px;
+    padding-right:0px
+  }
+  
+  main h1{
+    font-size:30px;
+  }
