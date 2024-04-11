@@ -12,14 +12,14 @@ export default function Page() {
     <meta name="description" content="Affordable and professional web design"/>
 	  <meta name="keywords" content="web design, affordable web design, professional web design"/>
   	<meta name="author" content="Zach Rousseau"/>
-    <title>I love computers</title>
+    <title>Local Luxuries</title>
 
 
     <link rel="stylesheet" href="./css/style.css"/>    {/*Pointer to Style Sheet*/}
     <header>
       <div className="container">
         <div id="branding">
-          <h1><span className="highlight">Zach Rousseau</span> Computers</h1> {/*Span keeps it in the same line */}
+          <h1><span className="highlight">Local</span> Luxuries</h1> {/*Span keeps it in the same line */}
         </div>	
         <nav> {/*Nav Tag */}
           <ul>
@@ -33,22 +33,12 @@ export default function Page() {
     {/*Showcase Section */}
     <section id="showcase">
       <div className="container">
-        <h1>High Quality Computers for You!</h1>
+        <h1>Find High Quality Local Food</h1>
         {/* Dummy text is from www.lipsum.com */}
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu luctus ipsum, rhoncus semper magna. Nulla nec magna sit amet sem interdum condimentum.</p>
+        <p>Step away from large food chains you can have anywhere and go local instead</p>
       </div>
     </section>
-    {/*Newsletter Section  */}
-    <section id="newsletter">
-      <div className="container">
-        <h1>Subscribe To Our Newsletter</h1>
-        <form>
-          <input type="email" placeholder="Enter Email..." /> {/*Get the email type, allow the user to submit it */}
-          <button type="submit" className="button_1">Subscribe</button>
-        </form>
-      </div>
-    </section>
-    {/* Adding in the Boxes section under the newsletter section 
+    {/*
 The boxes are in a container class and each box has it's own div
 
 We also add the images to the img folder
@@ -65,8 +55,8 @@ We also add the images to the img folder
             className="hidden md:block"
             alt="Screenshots of the dashboard project showing desktop version"
         />
-          <h3>Super Computers</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mi augue, viverra sit amet ultricies</p>
+          <h3><b>Dine In</b></h3>
+          <p>Sit down and enjoy a meal</p>
         </div>
         <div className="box">
         <Image
@@ -76,24 +66,34 @@ We also add the images to the img folder
             className="hidden md:block"
             alt="Screenshots of the dashboard project showing desktop version"
         />
-          <h3>Apple Computers</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mi augue, viverra sit amet ultricies</p>
+          <h3><b>Take Home</b></h3>
+          <p>Restaurants and stores that you can take food home from</p>
         </div>
         <div className="box">
           <Image
             src="/logo_brush.png" 
-            width={1000}
+            width={2000}
             height={760}
             className="hidden md:block"
             alt="Screenshots of the dashboard project showing desktop version"
             />
-          <h3>Windows Computers</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mi augue, viverra sit amet ultricies</p>
+          <h3><b>Delivery</b></h3>
+          <p>Businesses that offer delivery through a driver or 3rd party apps</p>
         </div>
       </div>
     </section>
+    {/*Newsletter Section  */}
+    <section id="newsletter">
+      <div className="container">
+        <h1>Subscribe To Our Newsletter</h1>
+        <form>
+          <input type="email" placeholder="Enter Email..." /> {/*Get the email type, allow the user to submit it */}
+          <button type="submit" className="button_1">Subscribe</button>
+        </form>
+      </div>
+    </section>
     <footer>
-      <p>Zach Rousseau, Copyright © 2024</p>
+      <p>Local Luxuries, Copyright © 2024</p>
     </footer>
   </div>
   );

@@ -60,7 +60,7 @@ header{
   color:#ffffff;
   padding-top:30px;
   min-height:70px;
-  border-bottom:#271de8 3px solid;
+  border-bottom:#0c8a43 3px solid;
 }
 
 
@@ -101,7 +101,7 @@ header nav{
 }
 
 header .highlight, header .current a{
-  color:#271de8;
+  color:#0c8a43;
   font-weight:bold;
 }
 
@@ -115,7 +115,7 @@ header a:hover{ /* Change font when hovering over a */
   min-height:400px;
   background:url('showcase.jpg') no-repeat 0 -400px;
   text-align:center;
-  color:#ffffff;
+  color: #0c8a43;
 }
 
 #showcase h1{
@@ -200,7 +200,7 @@ footer{
   padding:20px;
   margin-top:20px;
   color:#ffffff;
-  background-color:#271de8;
+  background-color:#0c8a43;
   text-align: center;
 }
 
