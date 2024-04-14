@@ -1,17 +1,12 @@
 import Image from 'next/image'
 import { sql } from "@vercel/postgres";
-
+// import {BrowserRouter, Link, NavLink, Route, Routes} from 'react-router-dom';
+import Link from 'next/link';
 
 export default function Page() {
   return (
     <div>
 
-      
-    <meta charSet="utf-8" />
-    <meta name="viewport" content="width=device-width"/>
-    <meta name="description" content="Affordable and professional web design"/>
-	  <meta name="keywords" content="web design, affordable web design, professional web design"/>
-  	<meta name="author" content="Zach Rousseau"/>
     <title>Local Luxuries</title>
 
 
@@ -26,6 +21,7 @@ export default function Page() {
             <li className="current"><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="services.html">Services</a></li>
+            <Link href="/cart">Cart</Link>
           </ul>
         </nav>
       </div>
