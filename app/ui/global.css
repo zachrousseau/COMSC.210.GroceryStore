@@ -32,6 +32,8 @@ body{
   background-color:#e7e7e7;
 }
 
+
+
 /* Global - 
 
 Global means that the css formatting rules specified will apply as a default
@@ -76,6 +78,7 @@ padding-top:5px;
 min-height:48px;
 border-bottom:#289b5c 5px solid;
 display: flex;
+justify-content:space-between;
 justify-content: center;
 }
 
