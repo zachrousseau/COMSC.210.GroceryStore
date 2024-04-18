@@ -1,16 +1,27 @@
 import Link from 'next/link';
-import '@/app/ui/cart.css';
+import '@/app/ui/Items.css';
 
-export default function Cart() {
+export default function Page() {
   return (
     <div>
-      <header>
-        <nav>
-        <Link href="/">Home</Link>
-        <Link href="/Items">Items</Link>
-        </nav>
-      </header>
-      <main>
+        <meta charSet="utf-8" />
+        <link rel="icon" href="/customers/amy-burns.png" />
+        <meta name="viewport" content="width=device-width" />
+        <title>Grocery Store</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet" />
+        <div className="banner">
+          <header>
+            <h1>Grocery Store</h1>
+            <nav>
+              <Link href="/">Home</Link>
+              <Link href="/Items">Items</Link>
+              <Link href="/cart">Cart</Link>
+            </nav>
+          </header>
+
+          <center>
+          <main>
         <table className="item-table">
           <thead>
             <tr>
@@ -42,11 +53,12 @@ export default function Cart() {
             {/* Add more rows as needed */}
           </tbody>
         </table>
-
       <section id="checkout">
       <Link href="/checkout">Checkout</Link>
-      </section>
-      </main>
-    </div>
+    </section>
+    </main>
+    </center>
+  </div>
+  </div>
   );
 }
