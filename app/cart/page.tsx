@@ -11,8 +11,6 @@ export default function Cart() {
         </nav>
       </header>
       <main>
-        <h1>Welcome Guest!</h1>
-
         <table className="item-table">
           <thead>
             <tr>

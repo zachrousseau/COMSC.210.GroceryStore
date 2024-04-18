@@ -6,12 +6,14 @@ export default function Cart() {
   return (
     <div>
       <body>
-        <header>
-          <nav>
-          <Link href="/">Home</Link>
-          <Link href="/Items">Items</Link>
-          </nav>
-        </header>
+      <header>
+            <h1>Grocery Store</h1>
+            <nav>
+              <Link href="/">Home</Link>
+              <Link href="/Items">Items</Link>
+              <Link href="/cart">Cart</Link>
+            </nav>
+          </header>
         <section id='title'> 
             <h1> Shipping Information</h1>
           </section>

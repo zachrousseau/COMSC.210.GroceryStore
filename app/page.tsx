@@ -18,9 +18,8 @@ export default function Page() {
         </div>	
         <nav> {/*Nav Tag */}
           <ul>
-            <li className="current"><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="services.html">Services</a></li>
+            <Link href="/">Home</Link>
+            <Link href="/Items">Items</Link>
             <Link href="/cart">Cart</Link>
           </ul>
         </nav>
@@ -76,16 +75,6 @@ We also add the images to the img folder
           <h3><b>Delivery</b></h3>
           <p>Businesses that offer delivery through a driver or 3rd party apps</p>
         </div>
-      </div>
-    </section>
-    {/*Newsletter Section  */}
-    <section id="newsletter">
-      <div className="container">
-        <h1>Subscribe To Our Newsletter</h1>
-        <form>
-          <input type="email" placeholder="Enter Email..." /> {/*Get the email type, allow the user to submit it */}
-          <button type="submit" className="button_1">Subscribe</button>
-        </form>
       </div>
     </section>
     <footer>
