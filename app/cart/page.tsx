@@ -6,7 +6,8 @@ export default function Cart() {
     <div>
       <header>
         <nav>
-          <Link href="/">Home</Link>
+        <Link href="/">Home</Link>
+        <Link href="/Items">Items</Link>
         </nav>
       </header>
       <main>

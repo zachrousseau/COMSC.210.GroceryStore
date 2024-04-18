@@ -1,0 +1,120 @@
+h1, h2, h3, h4 ,h5 ,h6, p, body, html{
+	margin:0;
+	padding:0;
+}
+h1{
+	font-size: 40px;
+  }
+p{
+	-webkit-text-stroke: 0.2px black; /* width and color */
+}
+a{
+	color:rgb(255, 255, 255);
+}
+body{
+	font-family:"Poppins", sans-serif;
+	color:rgb(40, 187, 20);
+	
+}
+.banner{
+	background-image:url(https://www.the-sun.com/wp-content/uploads/sites/6/2023/01/colorful-supermarket-aisle-withe-no-791693291-2.jpg);
+	background-size:cover;
+}
+.banner-text{
+	text-align:center;
+	padding:200px;
+}
+.banner-text a:link{
+	border-radius:5px; 
+	color:white;
+	background-color:gray;
+	text-decoration:none;
+	padding:15px;
+	margin-top:50px;
+	display:inline-block;
+}
+header{
+	width:70%;
+	margin:0 auto;
+	display:flex;
+	justify-content:space-between;
+	padding:0px 30px 0px 0px;
+}
+header h1{
+	padding:20px;
+}
+.logo img{
+	width:100%;
+}
+nav{
+	padding:20px;
+	font-size:1.5em;
+}
+
+nav a:link{
+	color:rgb(20, 102, 4);
+	text-decoration:none;
+	padding:0 25px;
+}
+nav a:visited{
+	color:rgb(0, 0, 0);
+	text-decoration:none;
+}
+nav a:hover{
+	color:white;
+	text-decoration:none;
+}
+.main-content{
+	padding:50px 300px;
+}
+.one-col{
+	text-align:center;
+	color:gray;
+	padding:20px 0px;
+}
+.two-col{
+	display:flex;
+}
+.two-col1{
+	width:40%;
+	text-align:left;
+}
+.two-col2{
+	text-align:center;
+	color:black;
+	width:40%;
+	padding:7px;
+}
+.two-col1 img{
+	width:100%;
+}
+.two-col2 a:link{
+	border-radius:5px; 
+	color:rgb(255, 255, 255);
+	background-color:gray;
+	text-decoration:none;
+	padding:15px;
+	margin-top:50px;
+	display:inline-block;
+}
+.signup{
+	background-color:gray;
+	text-align:center;
+	color:black;
+	padding:50px 0px;
+}
+.signup a:link{
+	border-radius:5px; 
+	color:gray;
+	background-color:white;
+	text-decoration:none;
+	padding:15px;
+	margin-top:50px;
+	display:inline-block;
+}
+.copyright{
+	background-color:black;
+	text-align:center;
+	color:white;
+	padding:50px 0px;
+}
