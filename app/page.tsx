@@ -1,77 +1,43 @@
-import Image from 'next/image'
-import { sql } from "@vercel/postgres";
-// import {BrowserRouter, Link, NavLink, Route, Routes} from 'react-router-dom';
 import Link from 'next/link';
+import '@/app/ui/Items.css';
 
 export default function Page() {
   return (
     <div>
+        <meta charSet="utf-8" />
+        <link rel="icon" href="/customers/amy-burns.png" />
+        <meta name="viewport" content="width=device-width" />
+        <title>Grocery Store</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet" />
+        <div className="banner">
+          <header>
+            <h1>Grocery Store</h1>
+            <nav>
+              <Link href="/">Home</Link>
+              <Link href="/Items">Items</Link>
+              <Link href="/cart">Cart</Link>
+            </nav>
+          </header>
+          <div className="banner-text">
+            <p>Better Food Locally</p>
+            <h1>Starts With You</h1>
+          </div>
+        </div>
 
-    <title>Local Luxuries</title>
-
-
-    <link rel="stylesheet" href="./css/style.css"/>    {/*Pointer to Style Sheet*/}
-    <header>
-      <div className="container">
-        <div id="branding">
-          <h1><span className="highlight">Local</span> Luxuries</h1> {/*Span keeps it in the same line */}
-        </div>	
-        <nav> {/*Nav Tag */}
-          <ul>
-            <Link href="/">Home</Link>
-            <Link href="/Items">Items</Link>
-            <Link href="/cart">Cart</Link>
-          </ul>
-        </nav>
-      </div>
-    </header>
-    {/*Showcase Section */}
-    <section id="showcase">
-      <div className="container">
-        <h1>Find High Quality Local Food</h1>
-        {/* Dummy text is from www.lipsum.com */}
-        <p>Step away from large food chains you can have anywhere and go local instead</p>
-      </div>
-    </section>
-    {/*
-The boxes are in a container class and each box has it's own div
-
-We also add the images to the img folder
-
-*/}
-    {/*Boxes Section  */}
-    <section id="boxes">
+          {/*Boxes Section  */}
+      <section id="boxes">
       <div className="container">
         <div className="box">
-          <Image
-            src="/logo_html.png" 
-            width={1000}
-            height={760}
-            className="hidden md:block"
-            alt="Screenshots of the dashboard project showing desktop version"
-        />
           <h3><b>Dine In</b></h3>
           <p>Sit down and enjoy a meal</p>
         </div>
         <div className="box">
-        <Image
-            src="/logo_css.png" 
-            width={1000}
-            height={760}
-            className="hidden md:block"
-            alt="Screenshots of the dashboard project showing desktop version"
-        />
+
           <h3><b>Take Home</b></h3>
           <p>Restaurants and stores that you can take food home from</p>
         </div>
         <div className="box">
-          <Image
-            src="/logo_brush.png" 
-            width={2000}
-            height={760}
-            className="hidden md:block"
-            alt="Screenshots of the dashboard project showing desktop version"
-            />
           <h3><b>Delivery</b></h3>
           <p>Businesses that offer delivery through a driver or 3rd party apps</p>
         </div>
