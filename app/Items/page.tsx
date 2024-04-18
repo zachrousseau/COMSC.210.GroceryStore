@@ -1,15 +1,13 @@
 import Link from 'next/link';
-import styles from '@/app/ui/style.css';
+import '@/app/ui/Items.css';
 
 export default function Page() {
   return (
     <div>
-        <div className={styles.shape} />
         <meta charSet="utf-8" />
         <link rel="icon" href="/customers/amy-burns.png" />
         <meta name="viewport" content="width=device-width" />
         <title>Grocery Store</title>
-        <link href="style.css" rel="stylesheet" type="text/css" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet" />
         <div className="banner">
