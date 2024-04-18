@@ -119,7 +119,7 @@ header a:hover{ /* Change font when hovering over a */
 /* Showcase */
 #showcase{
   min-height:400px;
-  background:url('showcase.jpg') no-repeat 0 -400px;
+  background:url('./showcase.jpg') no-repeat 0 -400px;
   text-align:center;
   color: #289b5c;
 }
