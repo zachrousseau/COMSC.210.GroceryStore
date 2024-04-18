@@ -35,7 +35,7 @@ export default function Page() {
               <img src="/customers/apple-pie-transparent-png.png" />
             </div>
             <div className="two-col2">
-              <h1>Grandma's Apple Pie</h1>
+              <h1>Grandmas Apple Pie</h1>
               <p>Apple pie is a classic dessert that has become synonymous with comfort and tradition in many cultures around the world. 
                 This delectable pastry consists of a sweet and spiced apple filling encased in a flaky pastry crust, 
                 typically served warm with a scoop of vanilla ice cream or a dollop of whipped cream.
