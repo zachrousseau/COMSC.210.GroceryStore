@@ -80,7 +80,7 @@ export default function Page() {
                       </td>
                       <td>
                         <div className="email">
-                          <span><b>My Mom's Favorite Soup</b> </span>
+                          <span><b>My Mom&apos;s Favorite Soup</b> </span>
                           <span>Fugiat voluptates quasi nemo, ipsa perferendis</span>
                         </div>
                       </td>
