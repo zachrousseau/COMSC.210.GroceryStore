@@ -47,5 +47,6 @@ export default function Page() {
       <p>Local Luxuries, Copyright © 2024</p>
     </footer>
   </div>
+  
   );
 }

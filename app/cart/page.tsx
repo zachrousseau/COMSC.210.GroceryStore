@@ -1,9 +1,10 @@
 import Link from 'next/link';
-import '@/app/ui/Items.css';
+import '@/app/ui/cart2.css';
 
 export default function Page() {
   return (
     <div>
+
         <meta charSet="utf-8" />
         <link rel="icon" href="/customers/amy-burns.png" />
         <meta name="viewport" content="width=device-width" />
@@ -20,45 +21,176 @@ export default function Page() {
             </nav>
           </header>
 
-          <center>
-          <main>
-        <table className="item-table">
-          <thead>
-            <tr>
-              <th>Item</th>
-              <th>Price</th>
-              <th>Quantity</th>
-              <th>Total</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Apple Pie</td>
-              <td>$10.00</td>
-              <td>1</td>
-              <td>$10.00</td>
-            </tr>
-            <tr>
-              <td>Loaf of Bread</td>
-              <td>$5.00</td>
-              <td>3</td>
-              <td>$15.00</td>
-            </tr>
-            <tr>
-              <td>Cheese Pizza</td>
-              <td>$10.00</td>
-              <td>2</td>
-              <td>$20.00</td>
-            </tr>
-            {/* Add more rows as needed */}
-          </tbody>
-        </table>
-      <section id="checkout">
-      <Link href="/checkout">Checkout</Link>
-    </section>
-    </main>
-    </center>
-  </div>
-  </div>
+        </div>
+      <div className="ftco-section">
+        <div className="container">
+          <div className="row justify-content-center">
+            <div className="col-md-6 text-center mb-4">
+              <h2 className="heading-section">Cart</h2>
+            </div>
+          </div>
+          <div className="row">
+            <div className="col-md-12">
+              <div className="table-wrap">
+                <table className="table">
+                  <thead className="thead-primary">
+                    <tr>
+                      <th>&nbsp;</th>
+                      <th>Product</th>
+                      <th>Price</th>
+                      <th>Quantity</th>
+                      <th>total</th>
+                      <th>&nbsp;</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr className="alert" role="alert">
+                      <td>
+                        <label className="checkbox-wrap checkbox-primary">
+                          {/*<input type="checkbox" checked>*/}
+                            <span className="checkmark"></span>
+                        </label>
+                      </td>
+                      <td>
+                        <div className="email">
+                          <span><b>Awesome Food </b></span>
+                          <span>Fugiat voluptates quasi nemo, ipsa perferendis</span>
+                        </div>
+                      </td>
+                      <td>$44.99</td>
+                      <td className="quantity">
+                        <div className="input-group">
+                          {/* <input type="text" name="quantity" className="quantity form-control input-number" value="2" min="1" max="100">*/}
+                        </div>
+                      </td>
+                      <td>$89.98</td>
+                      <td>
+                        <button type="button" className="close" data-dismiss="alert" aria-label="Close">
+                          <span aria-hidden="true"><i className="fa fa-close"></i></span>
+                        </button>
+                      </td>
+                    </tr>
+
+                    <tr className="alert" role="alert">
+                      <td>
+                        <label className="checkbox-wrap checkbox-primary">
+                          {/*<input type="checkbox">*/}
+                            <span className="checkmark"></span>
+                        </label>
+                      </td>
+                      <td>
+                        <div className="email">
+                          <span><b>My Mom&apos;s Favorite Soup</b> </span>
+                          <span>Fugiat voluptates quasi nemo, ipsa perferendis</span>
+                        </div>
+                      </td>
+                      <td>$30.99</td>
+                      <td className="quantity">
+                        <div className="input-group">
+                          {/*<input type="text" name="quantity" className="quantity form-control input-number" value="1" min="1" max="100">*/}
+                        </div>
+                      </td>
+                      <td>$30.99</td>
+                      <td>
+                        <button type="button" className="close" data-dismiss="alert" aria-label="Close">
+                          <span aria-hidden="true"><i className="fa fa-close"></i></span>
+                        </button>
+                      </td>
+                    </tr>
+
+                    <tr className="alert" role="alert">
+                      <td>
+                        <label className="checkbox-wrap checkbox-primary">
+                          {/*<input type="checkbox">*/}
+                            <span className="checkmark"></span>
+                        </label>
+                      </td>
+                      <td>
+                        <div className="email">
+                          <span><b>Whatever Evan Rapoza is Cooking for Dinner</b> </span>
+                          <span>Fugiat voluptates quasi nemo, ipsa perferendis</span>
+                        </div>
+                      </td>
+                      <td>$35.50</td>
+                      <td className="quantity">
+                        <div className="input-group">
+                          {/*<input type="text" name="quantity" className="quantity form-control input-number" value="1" min="1" max="100">*/}
+                        </div>
+                      </td>
+                      <td>$35.50</td>
+                      <td>
+                        <button type="button" className="close" data-dismiss="alert" aria-label="Close">
+                          <span aria-hidden="true"><i className="fa fa-close"></i></span>
+                        </button>
+                      </td>
+                    </tr>
+
+                    <tr className="alert" role="alert">
+                      <td>
+                        <label className="checkbox-wrap checkbox-primary">
+                          {/*<input type="checkbox">*/}
+                            <span className="checkmark"></span>
+                        </label>
+                      </td>
+                      <td>
+                        <div className="email">
+                          <span><b>Totally not Dog Meat</b></span>
+                          <span>Fugiat voluptates quasi nemo, ipsa perferendis</span>
+                        </div>
+                      </td>
+                      <td>$76.99</td>
+                      <td className="quantity">
+                        <div className="input-group">
+                          {/*<input type="text" name="quantity" className="quantity form-control input-number" value="1" min="1" max="100">*/}
+                        </div>
+                      </td>
+                      <td>$76.99</td>
+                      <td>
+                        <button type="button" className="close" data-dismiss="alert" aria-label="Close">
+                          <span aria-hidden="true"><i className="fa fa-close"></i></span>
+                        </button>
+                      </td>
+                    </tr>
+
+                    <tr className="alert" role="alert">
+                      <td className="border-bottom-0">
+                        <label className="checkbox-wrap checkbox-primary">
+                          {/*<input type="checkbox">*/}
+                            <span className="checkmark"></span>
+                        </label>
+                      </td>
+                      <td className="border-bottom-0">
+                        <div className="email">
+                          <span><b>Elephant</b></span>
+                          <span>Fugiat voluptates quasi nemo, ipsa perferendis</span>
+                        </div>
+                      </td>
+                      <td className="border-bottom-0">$40.00</td>
+                      <td className="quantity border-bottom-0">
+                        <div className="input-group">
+                          {/*<input type="text" name="quantity" className="quantity form-control input-number" value="1" min="1" max="100">*/}
+                        </div>
+                      </td>
+                      <td className="border-bottom-0">$40.00</td>
+                      <td className="border-bottom-0">
+                        <button type="button" className="close" data-dismiss="alert" aria-label="Close">
+                          <span aria-hidden="true"><i className="fa fa-close"></i></span>
+                        </button>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div className="banner-text">
+          <a href="/checkout">Checkout</a>
+        </div>
+    <footer>
+            <p>Local Luxuries, Copyright © 2024</p>
+      </footer>
+    </div>
   );
 }
