@@ -6,7 +6,14 @@ export default function Cart() {
   return (
     <div>
       <body>
-      <header>
+      <meta charSet="utf-8" />
+        <link rel="icon" href="/customers/amy-burns.png" />
+        <meta name="viewport" content="width=device-width" />
+        <title>Grocery Store</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet" />
+        <div className="banner">
+          <header>
             <h1>Grocery Store</h1>
             <nav>
               <Link href="/">Home</Link>
@@ -14,6 +21,9 @@ export default function Cart() {
               <Link href="/cart">Cart</Link>
             </nav>
           </header>
+        </div>
+
+
         <section id='title'> 
             <h1> Shipping Information</h1>
           </section>
@@ -64,10 +74,13 @@ export default function Cart() {
           <input type="string" id="security_code" placeholder="Security Code"></input>
         </main>
 
-        <section id="thankyou">
-        <Link href="/thankyou">Order!</Link>
-        </section>
+        <div className="banner-text">
+          <a href="/thankyou">Order</a>
+        </div>
       </body>
+      <footer>
+            <p>Local Luxuries, Copyright © 2024</p>
+        </footer>
     </div>
   );
 }

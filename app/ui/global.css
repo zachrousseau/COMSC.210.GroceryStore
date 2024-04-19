@@ -188,12 +188,18 @@ ul#services li{
 }
 
 footer{
-  padding:20px;
-  margin-top:20px;
+  padding:5px;
+  margin-top:10px;
   color:#ffffff;
   background-color:#289b5c;
   text-align: center;
+  position:fixed;
+  bottom:0;
+  left: 0;
+  width: 100%;
+  height: 30px;
 }
+
 
 /* Media Queries */
 @media(max-width: 768px){
