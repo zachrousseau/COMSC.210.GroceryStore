@@ -1,5 +1,24 @@
+
 import Link from 'next/link';
 import '@/app/ui/Items.css';
+import ImageComponent from '../Items/ImageComponent';
+
+
+// firebaseConfig.js
+import firebase from "firebase/app";
+import 'firebase/database';
+import "firebase/storage";
+
+const firebaseConfig = {
+  apiKey: "AIzaSyDkEiScS3QUqfAui8URpkEngt85_ahopDM",
+  authDomain: "grocerystore-38806.firebaseapp.com",
+  projectId: "grocerystore-38806",
+  storageBucket: "grocerystore-38806.appspot.com",
+  messagingSenderId: "207254493702",
+  appId: "1:207254493702:web:8584cd47e962f517318187",
+  measurementId: "G-CH3DWTVX45"
+};
+
 
 export default function Page() {
   return (
@@ -32,7 +51,7 @@ export default function Page() {
           </div>
           <div className="two-col">
             <div className="two-col1">
-              <img src="/customers/apple-pie-transparent-png.png" />
+              <ImageComponent imageName="apple-pie-transparent-png.png"/>
             </div>
             <div className="two-col2">
               <h1>Grandmas Apple Pie</h1>
@@ -54,13 +73,15 @@ export default function Page() {
               <a href="#">Add To Cart</a>
             </div>
             <div className="two-col1">
-              <img src="/customers/Garlic-Bread.png" />
+              <ImageComponent imageName="Garlic-Bread.png"/>
             </div>
           </div>
         </div>
         <footer>
             <p>Local Luxuries, Copyright © 2024</p>
         </footer>
+        
       </div>
+      
   );
 }
