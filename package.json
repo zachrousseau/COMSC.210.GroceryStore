@@ -8,6 +8,7 @@
     "start": "next start"
   },
   "dependencies": {
+    "@firebase/storage": "^0.12.4",
     "@heroicons/react": "^2.0.18",
     "@tailwindcss/forms": "^0.5.7",
     "@types/node": "20.5.7",
@@ -15,7 +16,9 @@
     "autoprefixer": "10.4.15",
     "bcrypt": "^5.1.1",
     "clsx": "^2.0.0",
+    "firebase": "^10.11.0",
     "gridjs": "^6.2.0",
+    "mysql2": "^3.9.7",
     "next": "^14.0.2",
     "postcss": "8.4.31",
     "react": "18.2.0",
